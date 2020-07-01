@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-06-25T16:29:30Z" name="Default suite" finished-at="2020-06-25T16:29:50Z" duration-ms="19990">
+    <groups>
+    </groups>
+    <test started-at="2020-06-25T16:29:30Z" name="Default test" finished-at="2020-06-25T16:29:50Z" duration-ms="19990">
+      <class name="com.teklabframework.classExamples.alertWindowFrame.WindowExample">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.teklabframework.classExamples.alertWindowFrame.WindowExample@14ec4505]" started-at="2020-06-25T16:29:30Z" name="startUp" finished-at="2020-06-25T16:29:38Z" duration-ms="7289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="policyWindow()[pri:0, instance:com.teklabframework.classExamples.alertWindowFrame.WindowExample@14ec4505]" started-at="2020-06-25T16:29:38Z" name="policyWindow" finished-at="2020-06-25T16:29:49Z" duration-ms="11787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- policyWindow -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.teklabframework.classExamples.alertWindowFrame.WindowExample@14ec4505]" started-at="2020-06-25T16:29:49Z" name="teardown" finished-at="2020-06-25T16:29:50Z" duration-ms="861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.teklabframework.classExamples.alertWindowFrame.WindowExample -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

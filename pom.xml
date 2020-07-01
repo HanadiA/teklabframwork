@@ -1,0 +1,124 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.teklab</groupId>
+	<artifactId>teklabframework</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>My first Teklab Framework</name>
+
+	<!-- Project Properties -->
+
+	<properties>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<maven.compiler.source>14</maven.compiler.source>
+
+		<maven.compiler.target>14</maven.compiler.target>
+
+	</properties>
+	<dependencies>
+
+
+
+		<!-- Selenium Standalone -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.14.3</version>
+			<scope>test</scope>
+		</dependency>
+
+
+
+ 
+
+	</dependencies>
+
+	<build>
+		<plugins>
+
+			<plugin>
+
+				<groupId>org.apache.maven.plugins</groupId>
+
+				<artifactId>maven-surefire-plugin</artifactId>
+
+				<version>3.0.0-M4</version>
+
+				<configuration>
+
+					<forkCount>4</forkCount>
+
+					<reuseForks>false</reuseForks>
+
+					<reportsDirectory>target/surefire-reports-${surefire.forkNumber}</reportsDirectory>
+
+					<suiteXmlFiles>
+
+
+
+						<!-- UI Regression -->
+
+						<suiteXmlFile>testRunner/Examples/regression/testng.xml</suiteXmlFile>
+
+
+
+
+
+						<!-- UI System end to end -->
+
+
+
+						<!-- API System end to end -->
+
+
+
+						<!-- API Regression -->
+
+
+
+
+
+
+
+					</suiteXmlFiles>
+
+
+
+					<!-- added below two line so maven would generate reports even there 
+						are failed tests -->
+
+					<testErrorIgnore>true</testErrorIgnore>
+
+					<testFailureIgnore>true</testFailureIgnore>
+
+				</configuration>
+
+			</plugin>
+
+
+
+
+
+
+
+
+
+
+
+		</plugins>
+
+	</build>
+
+
+
+</project>
